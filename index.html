@@ -10,10 +10,9 @@
 
     <div id='timeline-embed' style="width: 100%; height: 600px"></div>
 
-    <h2 style="text-align: center;">Add to the list of crimes below</h2>
+    <h2 style="text-align: center;"><a href="https://docs.google.com/spreadsheets/d/1p0YDmMfnwj0uMqTFC_oAWRjEKj6asjMMa_N5Jt5td3w/edit#gid=0">Add to the list of crimes: here or below</a></h2>
 
-
-    <iframe src="https://docs.google.com/spreadsheets/d/1p0YDmMfnwj0uMqTFC_oAWRjEKj6asjMMa_N5Jt5td3w/pubhtml?widget=true&amp;headers=false" style="width: 100%; height: 500px"></iframe>
+    <iframe src="https://docs.google.com/spreadsheets/d/1p0YDmMfnwj0uMqTFC_oAWRjEKj6asjMMa_N5Jt5td3w?rm=minimal?widget=true&amp;headers=false" style="width: 100%; height: 500px"></iframe>
 
     <script type="text/javascript">
       // The TL.Timeline constructor takes at least two arguments:
@@ -23,6 +22,12 @@
       // and the element must have CSS styling to give it width and height
       // optionally, a third argument with configuration options can be passed.
       // See below for more about options.
+	var options = 
+	{
+		hash_bookmark: true,
+		initial_zoom: 5
+	}
+	
       timeline = new TL.Timeline('timeline-embed',
         'https://docs.google.com/spreadsheets/d/1p0YDmMfnwj0uMqTFC_oAWRjEKj6asjMMa_N5Jt5td3w/edit?usp=drive_web');
     </script>
